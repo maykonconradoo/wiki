@@ -30,8 +30,7 @@
   <body>
     <!--Menu de navegação-->
     <div class="navegacao">
-
-      <img src="img/logo-wiki.png" alt="" class="logo-wiki">
+      <img src="img/logo-wiki.png" alt="" class="logo-wiki" />
 
       <nav class="menu">
         <ul>
@@ -77,22 +76,28 @@
 
     <!--pagina-->
     <div class="pagina">
-
-
       <!--header-->
       <header class="topo">
-        <div class="ico-desktop" id="abrir_menu" ><span class="material-symbols-outlined" > menu </span></div>
-        
-        <div class="ico-mobile" id="abrir-menu-mobile" ><span class="material-symbols-outlined" > menu </span></div>
-        
+        <div class="ico-desktop" id="abrir_menu">
+          <span class="material-symbols-outlined"> menu </span>
+        </div>
+
+        <div class="ico-mobile" id="abrir-menu-mobile">
+          <span class="material-symbols-outlined"> menu </span>
+        </div>
+
         <img src="img/logo.png" alt="" class="logo" />
-        <input
-          type="search"
-          class="form-control busca-input"
-          id="busca"
-          name="q"
-          placeholder="BUSCAR"
-        />
+
+        <div class="box-busca-input">
+          <input
+            type="search"
+            class="form-control"
+            id="busca"
+            name="q"
+            placeholder="BUSCAR"
+          />
+          <span class="material-symbols-outlined"> search </span>
+        </div>
       </header>
 
       <!--conteúdo-->
@@ -105,10 +110,19 @@
             workflow, so you can stop messing around and build faster.
           </p>
           <p>
-           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.
           </p>
           <p>
-          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text.
           </p>
           <hr />
 
@@ -126,7 +140,17 @@
             workflow, so you can stop messing around and build faster.
           </p>
 
-          <div class="video"><iframe width="100%" height="315" src="https://www.youtube.com/embed/ETVEc6G9Djc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="video">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/ETVEc6G9Djc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
           <h1>Build tools</h1>
           <p>
             Automate painful or time-consuming tasks in your development
@@ -144,7 +168,13 @@
 
           <h3>1. Build tools</h3>
           <p>
-            ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+            ontrary to popular belief, Lorem Ipsum is not simply random text. It
+            has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old. Richard McClintock, a Latin professor
+            at Hampden-Sydney College in Virginia, looked up one of the more
+            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+            going through the cites of the word in classical literature,
+            discovered the undoubtable source.
           </p>
 
           <div class="video"></div>
@@ -169,7 +199,17 @@
             workflow, so you can stop messing around and build faster.
           </p>
 
-          <div class="video"><iframe width="100%" height="315" src="https://www.youtube.com/embed/jLvbvBu-vSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="video">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/jLvbvBu-vSE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </section>
         <!--end conteúdo-->
 
@@ -193,37 +233,35 @@
         <!--end menu conteúdo-->
       </main>
       <!--end conteúdo-->
-
     </div>
     <!--end pagina-->
 
     <script>
-      const btn = document.getElementById("abrir_menu");
-    
-      btn.addEventListener("click", function() {
-        if (document.body.classList.contains("ocultar-menu")) {
-          document.body.classList.remove("ocultar-menu");
-          document.body.classList.add("expandir-menu");
+      const btn = document.getElementById('abrir_menu');
+
+      btn.addEventListener('click', function () {
+        if (document.body.classList.contains('ocultar-menu')) {
+          document.body.classList.remove('ocultar-menu');
+          document.body.classList.add('expandir-menu');
         } else {
-          document.body.classList.remove("expandir-menu");
-          document.body.classList.add("ocultar-menu");
+          document.body.classList.remove('expandir-menu');
+          document.body.classList.add('ocultar-menu');
         }
       });
     </script>
 
-<script>
-  const btnmobile = document.getElementById("abrir-menu-mobile");
+    <script>
+      const btnmobile = document.getElementById('abrir-menu-mobile');
 
-  btnmobile.addEventListener("click", function() {
-    if (document.body.classList.contains("expandir-menu-mobile")) {
-      document.body.classList.remove("expandir-menu-mobile");
-      document.body.classList.add("ocultar-menu-mobile");
-    } else {
-      document.body.classList.remove("ocultar-menu-mobile");
-      document.body.classList.add("expandir-menu-mobile");
-    }
-  });
-</script>
-
+      btnmobile.addEventListener('click', function () {
+        if (document.body.classList.contains('expandir-menu-mobile')) {
+          document.body.classList.remove('expandir-menu-mobile');
+          document.body.classList.add('ocultar-menu-mobile');
+        } else {
+          document.body.classList.remove('ocultar-menu-mobile');
+          document.body.classList.add('expandir-menu-mobile');
+        }
+      });
+    </script>
   </body>
 </html>
