@@ -313,6 +313,7 @@ aside.menu-conteudo ul li ul li {
   .box-busca-input input {
     width: 100%;
     margin-top: -18px;
+    background-color: transparent;
   }
   section.box-conteudo {
     margin-top: 30px;
